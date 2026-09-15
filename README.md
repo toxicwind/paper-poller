@@ -70,9 +70,25 @@ auto = ["start"]
 - Silent-death mode seen fleet-wide today (process "running", health dead, pitchfork
   unaware — the buildsrv RLock wedge) is exactly what the external watchdog covers.
 
-## Verification log
+## Verification log (2026-09-14, all MDT, all verified live)
 
-- 2026-09-14 ~18:47 MDT: e2e — PAPER-TASK `t-e2e7` posted to channel, claimed by
-  poller, PAPER-RESULT landed with 8 papers. (Times in channel entry.)
-- Leg latencies (seed demo, bridge-side): arXiv ~1.2s, alphaXiv ~0.9s per query;
-  24 papers / 3 queries in ~14s total.
+- E2E: PAPER-TASK `t-lane7e2e` posted 18:42 -> claimed 18:42:45 ->
+  PAPER-RESULT landed (channel line 1027, 18:42): 8 papers with
+  titles/IDs/URLs/one-line relevance.
+- kill -9 @18:43:16 -> pitchfork retry=true restarted: new PID by 18:43:28,
+  /health 200, first poll already done.
+- Wedge (kill -STOP @18:43:32; health dead, pitchfork still "running"):
+  watchdog 3 consecutive failures (18:43:51/18:44:26/18:45:01) ->
+  SIGKILL 18:45:01 -> recovered 18:45:46 via retry (new PID, /health 200,
+  polling). The exact silent-wedge mode seen fleet-wide today, covered.
+- Per-leg latencies (bridge-side): alphaXiv 0.7-1.1s ok; arXiv HTTP-429 /
+  tarpit during the post-demo burst -> per-leg 429 cooldown (5 min) added.
+- Seed demo (18:26): 24 papers / 3 queries in ~14s (both legs healthy then).
+- Incidents fixed forward, no rollbacks:
+  1. poller v1 parsed the protocol TEMPLATE line as a task -> bogus
+     PAPER-RESULT t-28c6529f (VOIDed in-channel; parser fixed in 61ae522).
+  2. committed TOML merge-conflict markers made pitchfork.toml unparseable
+     fleet-wide -> markers resolved (kept all stanzas), pushed 7e279c6bb2;
+     supervisor adopts new stanzas via `pitchfork start` run from the
+     sovereign dir (CLI reads ./pitchfork.toml; supervisor hot-reload of
+     the file is not observed in 2.16.0).
