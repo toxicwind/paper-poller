@@ -51,8 +51,13 @@ WHO = "paper-poller"
 # PAPER-TASK [optional-id]: query // optional why   (colon is mandatory so that
 # prose like "PAPER-TASK poller" never parses as a task)
 TASK_RE = re.compile(
-    r"PAPER-TASK\s*(?:\[([A-Za-z0-9][A-Za-z0-9_-]*)\]\s*)?:\s*(.+?)"
+    r"PAPER-TASK\s*(?:\[([A-Za-z0-9][A-Za-z0-9_-]*)\]\s*"
+    r"|([A-Za-z0-9][A-Za-z0-9_-]*)\s*)?:\s*(.+?)"
     r"(?:\s*//\s*(.+?))?\s*$")
+# The protocol spec itself contains a template line
+# ("PAPER-TASK: <query> // <why this matters>") — never treat <placeholders>
+# as a real task.
+TEMPLATE_RE = re.compile(r"<[A-Za-z_][A-Za-z0-9_]*>")
 RESULT_RE = re.compile(r"PAPER-RESULT\s+([A-Za-z0-9][A-Za-z0-9_-]*)")
 
 stats = {"boot": time.time(), "polls": 0, "last_poll": 0.0, "first_poll_done": False,
@@ -83,9 +88,12 @@ def parse_tasks(text):
         m = TASK_RE.search(line)
         if not m:
             continue
-        tid = task_id_for(line.strip(), m.group(1))
-        tasks.append({"id": tid, "query": m.group(2).strip(),
-                      "why": (m.group(3) or "").strip(), "line": line.strip()})
+        query = m.group(3) or ""
+        if TEMPLATE_RE.search(query):
+            continue  # protocol template, not a task
+        tid = task_id_for(line.strip(), m.group(1) or m.group(2))
+        tasks.append({"id": tid, "query": query.strip(),
+                      "why": (m.group(4) or "").strip(), "line": line.strip()})
     return tasks
 
 
