@@ -51,7 +51,7 @@ Evolved from the seed demo `/tmp/shingle-paper-race/race.py`; endpoint shapes bo
 
 ## ⚙️ Config — pitchfork stanzas
 
-Hand-edited into `/home/toxic/sovereign/pitchfork.toml`:
+Hand-edited into `/home/toxic/estate-scripts/pitchfork.toml`:
 
 ```toml
 [daemons.paper-poller]
@@ -90,7 +90,7 @@ auto = ["start"]
 - Seed demo (18:26): 24 papers / 3 queries in ~14s (both legs healthy then).
 - Incidents fixed forward, no rollbacks:
   1. poller v1 parsed the protocol TEMPLATE line as a task -> bogus PAPER-RESULT t-28c6529f (VOIDed in-channel; parser fixed in 61ae522).
-  2. committed TOML merge-conflict markers made pitchfork.toml unparseable fleet-wide -> markers resolved (kept all stanzas), pushed 7e279c6bb2; supervisor adopts new stanzas via `pitchfork start` run from the sovereign dir (CLI reads ./pitchfork.toml; supervisor hot-reload of the file is not observed in 2.16.0).
+  2. committed TOML merge-conflict markers made pitchfork.toml unparseable fleet-wide -> markers resolved (kept all stanzas), pushed 7e279c6bb2; supervisor adopts new stanzas via `pitchfork start` run from the estate-scripts dir (CLI reads ./pitchfork.toml; supervisor hot-reload of the file is not observed in 2.16.0).
 
 ## 📄 License & security
 
