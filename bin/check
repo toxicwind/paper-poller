@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# paper-poller — health/self-test gate (PASS/FAIL).
+# Verifies: (1) poller + watchdog sources compile, (2) live health endpoints
+# :25149 (poller) and :25150 (watchdog) answer ok:true. Read-only — never
+# touches the running daemons. Skips the network probe if the daemons are down
+# (reports WARN, not FAIL) so bin/check stays a valid local gate off-box.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "== paper-poller check: start =="
+fail=0
+
+for f in bin/poller.py bin/watchdog.py bin/race_papers.py; do
+  if ! /usr/bin/env python3 -m py_compile "$f"; then
+    echo "FAIL: $f compile error"; fail=1
+  fi
+done
+
+# Has argparse/entry: poller.py exposes a --self-test path? No — rely on compile + health.
+if ! grep -q "def main():" bin/poller.py; then
+  echo "FAIL: bin/poller.py missing main()"; fail=1
+fi
+
+# Live health probe (read-only). Fail only if the endpoints answer but unhealthy.
+for ep in "25149 poller" "25150 watchdog"; do
+  port="${ep%% *}"; name="${ep##* }"
+  body="$(curl -s -m 2 "http://127.0.0.1:${port}/health" 2>/dev/null || true)"
+  if [ -z "$body" ]; then
+    echo "WARN: :${port} (${name}) not answering — daemon may be stopped on this box (ok for local gate)"
+  elif ! echo "$body" | grep -qE '"ok":[[:space:]]*true'; then
+    echo "FAIL: :${port} (${name}) unhealthy: $body"; fail=1
+  else
+    echo "OK: :${port} (${name}) ${body}"
+  fi
+done
+
+if [ "$fail" -eq 1 ]; then
+  echo "== paper-poller check: FAIL =="
+  exit 1
+fi
+echo "== paper-poller check: PASS =="
+exit 0

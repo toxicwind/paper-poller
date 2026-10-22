@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# paper-poller — primary operation: the PAPER-TASK → PAPER-RESULT poller daemon.
+# Runs the fleet-channel poller (live on :25149, pitchfork-supervised).
+# Usage: bin/run  (starts the poller loop; set PAPER_POLLER_PORT to override)
+set -euo pipefail
+cd "$(dirname "$0")/.."
+exec /usr/bin/env python3 bin/poller.py "$@"
