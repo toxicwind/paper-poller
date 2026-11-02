@@ -1,0 +1,10 @@
+=== CYCLE 1: hide (viewer on normal ws -> special:browser) ===
+  before: ws=2
+  dsp: ok
+  dsp: ok
+  after:  ws=special:browser
+=== CYCLE 2: show (special:browser -> active ws + focus) ===
+  dsp: ok
+  dsp: ok
+  after:  ws=2
+  active: Window 5623ad014700 -> toxic@awrawr-pc - TigerVNC:

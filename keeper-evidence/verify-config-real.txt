@@ -1,0 +1,9 @@
+[1;32mDEBUG [0m]: User-specified config location: '/home/toxic/pens/estate/ranch/shell/ii/dots/.config/hypr/hyprland.lua'
+[1;32mDEBUG [0m]: [cfg] Config is either explicit or special.
+[1;32mDEBUG [0m]: [cfg] Config is lua, loading lua mgr
+[1;32mDEBUG [0m]: Disabling stdout logs (debug.enable_stdout_logs = 0). Further logs will be written to /hyprland.log
+
+
+======== Config parsing result:
+
+config ok

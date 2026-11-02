@@ -1,0 +1,1 @@
+error: [string "return hl.dispatch(hl.dsp.workspace("special:..."]:1: attempt to call a table value (field 'workspace')

@@ -1,0 +1,7 @@
+STATE: viewer on special:browser. Toggle once -> should become VISIBLE on normal ws
+workspace ID 2 (2) on monitor DP-2:
+  viewer ws=2
+  active: Window 5623ad014700 -> toxic@awrawr-pc - TigerVNC:
+STATE: now toggle again -> should go back to special (hidden)
+  viewer ws=special:browser
+  active: Window 5623a7de4460 -> π ⠹ Tau GLM Config Audit and Routing Fix:

@@ -1,0 +1,14 @@
+=== SHOW (viewer currently where?) ===
+  before ws=2
+  dsp: ok
+  dsp: ok
+  after  ws=special:browser
+=== HIDE ===
+  dsp: ok
+  dsp: ok
+  after  ws=2
+=== SHOW AGAIN (verify focus lands) ===
+  dsp: ok
+  dsp: ok
+  after  ws=special:browser
+  active: Window 5623a7de4460 -> π ⠇ Tau GLM Config Audit and Routing Fix:

@@ -1,0 +1,80 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.12s
+     Running unittests src/lib.rs (target/debug/build/tau-builtins/0de70f7eacb56b02/out/tau_builtins-0de70f7eacb56b02)
+
+running 53 tests
+test find::tests::bsd_dash_e_selects_posix_extended_regexes ... ok
+test find::tests::bsd_leading_flags_x_and_s_parse ... ok
+test find::tests::default_regex_syntax_does_not_treat_groups_as_extended ... ok
+test find::tests::exec_uses_shell_cwd_and_captures_child_stdout ... ok
+test find::tests::file_url_and_missing_operands_fail_without_panicking ... FAILED
+test find::tests::files0_from_stdin_resolves_roots_against_shell_cwd ... ok
+test find::tests::newer_xy_compares_candidate_x_against_reference_y ... ok
+test find::tests::newermt_accepts_iso_dates ... ok
+test find::tests::operand_with_spaces_is_walked ... ok
+test find::tests::perm_plus_mode_matches_any_set_bits ... ok
+test find::tests::regex_full_match_prefers_longest_alternative ... ok
+test find::tests::regex_matches_whole_path_only ... ok
+test find::tests::resolves_relative_walk_roots_against_shell_cwd ... ok
+test find::tests::size_accepts_t_and_p_suffixes ... ok
+test find::tests::type_accepts_comma_separated_list ... ok
+test find::tests::type_w_parses_and_matches_nothing ... ok
+test find::tests::valid_gnu_expression_can_use_dash_e_as_an_operand ... ok
+test grep::tests::a_brace_that_opens_no_interval_is_literal_in_an_ere ... ok
+test grep::tests::a_dollar_before_a_branch_boundary_still_anchors ... ok
+test grep::tests::basic_mode_is_posix_bre_and_extended_mode_is_strict ... ok
+test grep::tests::bracket_expressions_are_not_translated_as_bre ... ok
+test grep::tests::byte_offsets_labels_and_nul_separators_are_rendered ... ok
+test grep::tests::compact_numeric_context_is_rewritten_before_clap ... ok
+test grep::tests::conflicting_matcher_selections_are_rejected ... ok
+test grep::tests::double_dash_ends_option_parsing ... ok
+test grep::tests::files_without_match_reports_a_directory_operand ... ok
+test grep::tests::gnu_basic_alternation_and_color_aliases_are_supported ... ok
+test grep::tests::hyphen_valued_options_do_not_swallow_following_flags ... ok
+test grep::tests::include_dir_restricts_the_recursive_walk ... ok
+test grep::tests::literal_brace_is_not_rejected_by_the_operand_check ... ok
+test grep::tests::mangled_flag_words_are_rejected_rather_than_reinterpreted ... ok
+test grep::tests::max_count_and_no_match_statuses_are_gnu_compatible ... ok
+test grep::tests::negative_max_count_is_treated_as_no_limit ... ok
+test grep::tests::no_operand_brace_interval_is_rejected_through_grep ... ok
+test grep::tests::only_the_first_caret_of_a_branch_anchors ... ok
+test grep::tests::pattern_file_is_resolved_against_shell_cwd ... ok
+test grep::tests::patterns_beginning_with_a_hyphen_are_searched ... ok
+test grep::tests::perl_mode_supports_lookbehind ... ok
+test grep::tests::quiet_match_wins_over_later_error ... ok
+test grep::tests::recursive_files_without_match_lists_only_non_matching_files ... ok
+test grep::tests::recursive_rules_filter_walk_and_preserve_relative_names ... ok
+test grep::tests::recursive_single_file_operand_is_not_prefixed ... ok
+test grep::tests::recursive_walk_observes_cancellation ... ok
+test grep::tests::repetition_with_no_operand_is_literal_in_bre_and_invalid_in_ere ... ok
+test grep::tests::stdin_matches_are_visible_before_eof ... ok
+test grep::tests::unimplemented_options_are_hard_errors_not_silent_no_ops ... ok
+test grep::tests::unsupported_backreference_falls_back_to_the_users_own_text ... ok
+test grep::tests::version_is_reported_on_stdout ... ok
+test grep::tests::zero_max_count_selects_nothing_and_prints_no_count_record ... ok
+test pgrep::tests::count_prints_number_of_matches ... ok
+test pgrep::tests::exits_one_when_no_process_matches ... ok
+test pgrep::tests::exits_zero_and_prints_matching_pid ... ok
+test pgrep::tests::quiet_suppresses_matching_output ... ok
+
+failures:
+
+---- find::tests::file_url_and_missing_operands_fail_without_panicking stdout ----
+
+thread 'find::tests::file_url_and_missing_operands_fail_without_panicking' (1457225) panicked at crates/tau-builtins/src/find.rs:5177:13:
+assertion `left != right` failed: operand "" should fail, stdout: 
+c.rs
+b.md
+a.txt
+
+  left: 0
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    find::tests::file_url_and_missing_operands_fail_without_panicking
+
+test result: FAILED. 52 passed; 1 failed; 0 ignored; 0 measured; 1089 filtered out; finished in 0.14s
+
+error: test failed, to rerun pass `-p tau-builtins --lib`
+exit=101

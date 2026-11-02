@@ -1,0 +1,66 @@
+pitchfork WARN  daemon agent-display: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon agent-wm: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon agent-viewer: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon awrawr-mcp: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon awrawr-ws-exec: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon bedrock-ui: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon beellama-fast: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon bench-radar: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon boundless: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon browser-keeper: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon codebase-memory: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon coyote: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon delendai-control-api: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon doorbell-mcp: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon doorbell-oauth-edge: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon estate-chat: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon estate-exporter: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon estate-stream-broker: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon feedlot: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon files: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon forge: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon gibber-mcp: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon grafana: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon herd: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon hf-downloader: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon hodos: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon keeper-floaty: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon keypool: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon kimi-auto-shim: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon kimi-code: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon kitty-mcp: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon matter-server: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon mesh-hub: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon mesh-landing: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon ml-serve: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon model-guard: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon nativelink: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon nginx: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon nim-kimi-sidecar: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon node-exporter: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon null-g-proxy: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon oracle-core: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon paper-poller-watchdog: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon paper-poller: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon phone-sentinel: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon prometheus: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon qdrant: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon ralph-dashboard: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon ranch-ui: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon rig: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon rust-web: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon search-api: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon smithers-gateway: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon squawk-history: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon tau-chute: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon toolcall-llm: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon vansrouter: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon windmill: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon yote: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon squawk-ws: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+pitchfork WARN  daemon mbx-cache: both `port` and deprecated expected_port/auto_bump_port/port_bump_attempts are set; ignoring deprecated fields
+[?2026h[?25l⠋ [estate/browser-keeper] waiting for HTTP http://127.0.0.1:25154/...
+[?2026l[?2026h[1A[80D[0J[?25h[?2026lpitchfork ERROR Daemon estate/browser-keeper failed to start
+[?2026h[?25l✗ [estate/browser-keeper] failed (exit code 1): Failed to start daemon estate/browser-keeper: port 25154 is already in use by process 'chrome' (PID: 3523522)
+[?2026l[?2026h[2A[80D[0J[?25l✗ [estate/browser-keeper] failed (exit code 1): Failed to start daemon estate/browser-keeper: port 25154 is already in use by process 'chrome' (PID: 3523522)
+[?2026l[?2026h[?25h[?2026l

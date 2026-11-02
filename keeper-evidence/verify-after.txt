@@ -1,0 +1,8 @@
+[1;32mDEBUG [0m]: [cfg] Regular config at /home/toxic/.config/hypr/hyprland.lua
+[1;32mDEBUG [0m]: [cfg] Using lua config found at /home/toxic/.config/hypr/hyprland.lua
+[1;32mDEBUG [0m]: Disabling stdout logs (debug.enable_stdout_logs = 0). Further logs will be written to /hyprland.log
+
+
+======== Config parsing result:
+
+config ok

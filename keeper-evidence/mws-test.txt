@@ -1,0 +1,3 @@
+error: return hl.dispatch(movetoworkspacesilent,1):1: hl.dispatch: expected a dispatcher (e.g. hl.dsp.window.close())
+
+ → Note: dispatch in lua is a shorthand for hl.dispatch(...), your syntax might need to be updated.

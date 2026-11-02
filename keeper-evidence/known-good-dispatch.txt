@@ -1,0 +1,3 @@
+error: [string "return hl.dispatch(movetoworkspacesilent 1)"]:1: ')' expected near '1'
+
+ → Note: dispatch in lua is a shorthand for hl.dispatch(...), your syntax might need to be updated.

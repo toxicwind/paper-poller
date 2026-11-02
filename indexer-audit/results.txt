@@ -1,0 +1,53 @@
+== nzbindex-search ==
+URL: https://www.nzbindex.com/search/?q=Cosmic+Disclosure&max=25&sort=agedesc&minsize=10
+== binsearch ==
+URL: https://www.binsearch.info/search.php?q=Cosmic+Disclosure&max=25&minsize=10&search=P
+== nzbking ==
+URL: http://nzbking.com/search/?q=Cosmic+Disclosure
+== 6box-caps ==
+URL: https://6box.me/api?t=caps
+== usenetcrawler-caps ==
+URL: https://usenet-crawler.com/api?t=caps
+== gingadaddy-caps ==
+URL: https://www.gingadaddy.com/api?t=caps
+== digitalcarnage-caps ==
+URL: https://digitalcarnage.info/api?t=caps
+== althub-caps ==
+URL: http://althub.co.za/api?t=caps
+== fanzub-caps ==
+URL: https://fanzub.com/api?t=caps
+curl: (6) Could not resolve host: 6box.me
+HTTP 000 | 0.020849s | 0B | redirect=
+head: cannot open '/tmp/ia_body' for reading: No such file or directory
+
+
+HTTP 200 | 0.211383s | 3271B | redirect=
+<?xml version="1.0" encoding="UTF-8"?> <caps>   <server appversion="0.2.3p" version="0.5" title="Digital Carnage" strapline="Carnage with ones and zeros" email="help@digitalcarnage.info" url="https://digitalcarnage.info/" image="https://digitalcarnage.info/images/banner.jpg"/>   <limits max="100" default="100"/>   <retention days="999"/>   <registration available="no" open="yes"/>   <searching>     <search available="yes" supportedParams="q"/>     <tv-search available="yes" supportedParams="q,vi
+
+HTTP 404 | 0.219329s | 5826B | redirect=
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/b22f0bf051a80e3e.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-cdf94508d0478589.js"/><script src="/_next/static/chunks/fd9d1056-62561829c7c4dc48.js" async=""></script><script src="/_next/static/chunks/938-d58b77e873e4d6e6.js" async=""></script><script sr
+
+HTTP 301 | 0.279084s | 162B | redirect=https://althub.co.za/api?t=caps
+<html> <head><title>301 Moved Permanently</title></head> <body> <center><h1>301 Moved Permanently</h1></center> <hr><center>nginx</center> </body> </html> 
+
+HTTP 200 | 0.308222s | 2116B | redirect=
+<?xml version="1.0" encoding="UTF-8"?>   <caps>     <!-- server information -->     <server version="1.0" title="GingaDADDY" strapline="The DADDY of NZB indexers"             email="support@gingadaddy.com" url="https://www.gingadaddy.com/"             image="https://www.gingadaddy.com/themes/ICGstation/images/newlogo2.png"/>      <!-- limit parameter range -->     <limits max="100" default="50"/>      <retention days="9001"/>      <registration available="no" open="no" />      <searching>       
+
+HTTP 404 | 0.477258s | 1885B | redirect=
+<!DOCTYPE html> <html lang="en"> <head>     <title>Fanzub.com is closed</title>     <style type="text/css">         body {             font-family: verdana, arial, helvetica, sans-serif;             background-color: #FFFFFF;         }     </style> <script>   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+
+HTTP 301 | 0.561525s | 795B | redirect=https://www.usenet-crawler.com/api?t=caps
+<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> <title> 301 Moved Permanently </title><style>@media (prefers-color-scheme:dark){body{background-color:#000!important}}</style></head> <body style="color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;"> <div style="height:auto; min-height:100%; ">     <div style="text-align: center; width:800px; margi
+
+HTTP 301 | 0.646614s | 332B | redirect=https://nzbking.com/search/?q=Cosmic+Disclosure
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> <html><head> <title>301 Moved Permanently</title> </head><body> <h1>Moved Permanently</h1> <p>The document has moved <a href="https://nzbking.com/search/?q=Cosmic+Disclosure">here</a>.</p> <hr> <address>Apache/2.4.58 (Ubuntu) Server at nzbking.com Port 80</address> </body></html> 
+
+HTTP 308 | 0.841304s | 60B | redirect=https://www.nzbindex.com/search?q=Cosmic%20Disclosure&max=25&sort=agedesc&minsize=10
+/search?q=Cosmic%20Disclosure&max=25&sort=agedesc&minsize=10
+
+== torbox-nntp-tls ==
+Connecting to 78.152.55.171
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+

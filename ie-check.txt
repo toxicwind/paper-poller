@@ -1,0 +1,11 @@
+191:const installedEnv = {
+192-  ...(await loadEnvFile("/home/toxic/.tau/.env")),
+193-  ...(await loadEnvFile("/home/toxic/.secrets")),
+194-  ...(await loadKeyringEnv()),
+195-};
+196-
+197-// Materialize tau's per-provider key files from the keyring (idempotent,
+16:import { DEAD_MODEL_IDS, MODEL_ALIASES, PROVIDER_DEFS } from "../src/data.ts";
+81:    defs: PROVIDER_DEFS,
+201:for (const def of PROVIDER_DEFS as Array<{
+224:    defs: PROVIDER_DEFS,
