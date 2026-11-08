@@ -1,0 +1,25 @@
+{
+  "name": "paper-poller",
+  "version": "1.0.0",
+  "description": "PAPER-TASK → PAPER-RESULT as a first-class fleet capability.",
+  "main": "bin/poller.ts",
+  "type": "module",
+  "bin": {
+    "paper-poller": "./bin/poller.ts"
+  },
+  "scripts": {
+    "dev": "bun --hot run bin/poller.ts",
+    "test": "bun test",
+    "typecheck": "tsgo --noEmit -p tsconfig.json",
+    "lint": "biome lint .",
+    "fmt": "biome format . --write",
+    "build": "bun build --target=bun --outdir=./dist bin/poller.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-types": "latest",
+    "typescript": "^5.0.0",
+    "@biomejs/biome": "^1.8.3"
+  },
+  "private": true
+}

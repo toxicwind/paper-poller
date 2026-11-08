@@ -4,4 +4,4 @@
 # Usage: bin/run  (starts the poller loop; set PAPER_POLLER_PORT to override)
 set -euo pipefail
 cd "$(dirname "$0")/.."
-exec /usr/bin/env python3 bin/poller.py "$@"
+exec /home/toxic/.local/share/mise/installs/python/3/bin/python3 bin/poller.py "$@"
