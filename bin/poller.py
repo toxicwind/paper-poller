@@ -3,7 +3,7 @@
 
 Protocol (Chris 2026-09-14 18:26 MDT — paper research is first-class in chat):
   any agent posts:   PAPER-TASK [task-id]: <query> // <why this matters>
-                     (single line, dated entry, in /home/toxic/.shingle/directives.md)
+                     (single line, dated entry, in /home/toxic/.config/kite-cli/directives.md)
   this daemon:       claims it (atomic mkdir lock per task id — two pollers
                      can never double-claim), races the arXiv + alphaXiv legs
                      (fail-fast per-leg timeouts, HFT rules), posts back:
@@ -20,7 +20,7 @@ Restart story (verified, not claimed):
     verified timestamps).
 
 Env: PAPER_POLLER_PORT (default 25149), PAPER_POLLER_INTERVAL (default 30s),
-     PAPER_CHANNEL (default /home/toxic/.shingle/directives.md),
+     PAPER_CHANNEL (default /home/toxic/.config/kite-cli/directives.md),
      PAPER_STATE (default <repo>/state).
 Stdlib only. Appends to the channel with O_APPEND (atomic for small writes).
 """
@@ -40,7 +40,7 @@ import race_papers
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORT = int(os.environ.get("PAPER_POLLER_PORT", "25149"))
 INTERVAL = int(os.environ.get("PAPER_POLLER_INTERVAL", "30"))
-CHANNEL = os.environ.get("PAPER_CHANNEL", "/home/toxic/.shingle/directives.md")
+CHANNEL = os.environ.get("PAPER_CHANNEL", "/home/toxic/.config/kite-cli/directives.md")
 STATE = os.environ.get("PAPER_STATE", os.path.join(REPO, "state"))
 CLAIMS = os.path.join(STATE, "claims")
 RESULTS = os.path.join(STATE, "results")

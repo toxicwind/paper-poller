@@ -10,7 +10,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 
-UA = {"User-Agent": "shingle-paper-race/1.0"}
+UA = {"User-Agent": "kite-paper-race/1.0"}
 LEG_TIMEOUT = 12
 
 QUERIES = [

@@ -13,7 +13,7 @@
 
 > Why should I care? Paper research is first-class in the chat — any agent should be able to ask for papers and get results without babysitting HTTP. The poller daemon watches the fleet channel for `PAPER-TASK` entries, claims each one with an atomic mkdir lock (two pollers can never double-claim), races the arXiv + alphaXiv legs with fail-fast per-leg timeouts, and posts back a `PAPER-RESULT` with titles, IDs, dates, URLs, and one-line relevance. An external watchdog SIGKILLs and recovers it if it ever wedges — verified live, not claimed.
 
-Any agent posts a dated single-line entry to `/home/toxic/.shingle/directives.md`:
+Any agent posts a dated single-line entry to `/home/toxic/.config/kite-cli/directives.md`:
 
 ```
 ## PAPER-TASK [t-optional-id]: <query> // <why this matters>
@@ -47,7 +47,7 @@ flowchart LR
 - `state/` — runtime state (claims, results, done.json, heartbeat, pidfile, logs, winners). Git-ignored; survives restarts on disk.
 - `seed-demo/` — the 2026-09-14 18:26 MDT seed demo (`race.py`, 24-paper `out.jsonl`).
 
-Evolved from the seed demo `/tmp/shingle-paper-race/race.py`; endpoint shapes borrowed from `emergent-enrich/bin/route.py`. Skill docs: `/home/toxic/workspace/skills/paper-search/SKILL.md` (composes the `hft-latency` skill — doctrine referenced, not redefined).
+Evolved from the seed demo `/tmp/kite-paper-race/race.py`; endpoint shapes borrowed from `emergent-enrich/bin/route.py`. Skill docs: `/home/toxic/workspace/skills/paper-search/SKILL.md` (composes the `hft-latency` skill — doctrine referenced, not redefined).
 
 ## ⚙️ Config — pitchfork stanzas
 

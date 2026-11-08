@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """paper-poller leg racer: arXiv + alphaXiv, stdlib-only, HFT-like.
 
-Evolved from /tmp/shingle-paper-race/race.py (seed demo, 2026-09-14 18:26 MDT).
+Evolved from /tmp/kite-paper-race/race.py (seed demo, 2026-09-14 18:26 MDT).
 Endpoint shapes borrowed from emergent-enrich route.py (public, no key):
   arXiv:    https://export.arxiv.org/api/query  (Atom feed)
   alphaXiv: https://api.alphaxiv.org/v1/search/paper  (public path; alphaXiv

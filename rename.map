@@ -1,0 +1,22 @@
+[
+  {
+    "from": ".shingle/directives.md",
+    "to": ".config/kite-cli/directives.md",
+    "file": "README.md"
+  },
+  {
+    "from": "shingle",
+    "to": "kite",
+    "file": "README.md"
+  },
+  {
+    "from": "shingle",
+    "to": "kite",
+    "file": "bin/race_papers.py"
+  },
+  {
+    "from": "shingle",
+    "to": "kite",
+    "file": "seed-demo/race.py"
+  }
+]
